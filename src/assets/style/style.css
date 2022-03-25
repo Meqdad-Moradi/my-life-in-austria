@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Rubik:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap");
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*::first-letter {
+  text-transform: uppercase;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-top: 1em;
+  color: #303236;
+}
+
+p.details {
+  font-size: 14px;
+}
+
+small {
+  font-size: 12px;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+section,
+main,
+footer {
+  padding-block: 3em;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 2em;
+  padding: 0.3em 1em;
+  text-transform: capitalize;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  outline: none;
+  border: none;
+  background-color: #cc3858;
+  color: white;
+  border-radius: 0.3em;
+  transition: all 0.4s ease-in-out;
+}
+.btn:hover {
+  background-color: #1d1e20;
+  box-shadow: 5px 5px 0.5em -0.2em #cc3858;
+  transform: translateY(-3px);
+}
+.btn:active {
+  background-color: #303236;
+}
+
+.title {
+  font-size: clamp(2rem, 3vw, 3.375rem);
+}
+
+.sub-title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.main-title {
+  margin-bottom: 2em;
+}
+
+.loading {
+  font-size: 1.5rem;
+  color: #cc3858;
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1220px;
+  margin-inline: auto;
+}/*# sourceMappingURL=style.css.map */
