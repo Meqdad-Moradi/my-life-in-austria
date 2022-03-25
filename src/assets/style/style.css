@@ -313,12 +313,26 @@ footer {
   padding-top: 3em;
   border-top: 4px solid #e52315;
 }
+.footer .logo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: start;
+}
 .footer .logo a {
   font-size: 1.6rem;
   font-weight: 600;
   text-transform: uppercase;
+  line-height: 1;
   color: #e52315;
   text-decoration: none;
+}
+.footer .logo a small {
+  display: block;
+  color: #55585e;
+  text-transform: initial;
+  font-weight: 400;
 }
 .footer .footer-content {
   display: grid;

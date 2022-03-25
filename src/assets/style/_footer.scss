@@ -9,12 +9,21 @@
    }
 
    .logo {
+      @include flex(column, $ai: start);
+
       a {
          font-size: 1.6rem;
          font-weight: 600;
          text-transform: uppercase;
+         line-height: 1;
          color: $primary;
          text-decoration: none;
+         small {
+            display: block;
+            color: $dark;
+            text-transform: initial;
+            font-weight: 400;
+         }
       }
    }
 
