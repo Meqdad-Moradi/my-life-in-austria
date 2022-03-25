@@ -1,5 +1,4 @@
 import React from "react";
-import MainTitle from "./../global/MainTitle";
 
 const Notice = () => {
    return (

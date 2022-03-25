@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "./Logo";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
    return (
@@ -10,9 +11,9 @@ const Footer = () => {
 
             <div className="footer-content">
                <div className="footer-links">
-                  <a href="#">Impresum / Disklaimar</a>
-                  <a href="#">Datenschutz</a>
-                  <a href="#">Technischeanforderungen</a>
+                  <Link to="/">Impresum / Disklaimar</Link>
+                  <Link to="/">Datenschutz</Link>
+                  <Link to="/">Technischeanforderungen</Link>
                </div>
 
                <div className="social">
@@ -40,7 +41,9 @@ const Footer = () => {
                </div>
             </div>
 
-            <small className="copyright">Copyright &copy; 2022, Meqdad Moradi. All right reserved.</small>
+            <small className="copyright">
+               Copyright &copy; 2022, Meqdad Moradi. All right reserved.
+            </small>
          </div>
       </footer>
    );

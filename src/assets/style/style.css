@@ -160,6 +160,7 @@ footer {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 99999;
 }
 .header .container {
   display: flex;
@@ -170,12 +171,26 @@ footer {
   height: inherit;
   gap: 2em;
 }
+.header .logo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: start;
+}
 .header .logo a {
   font-size: 1.6rem;
   font-weight: 600;
   text-transform: uppercase;
+  line-height: 1;
   color: #e52315;
   text-decoration: none;
+}
+.header .logo a small {
+  display: block;
+  color: #55585e;
+  text-transform: initial;
+  font-weight: 400;
 }
 .header .nav-list {
   display: flex;
