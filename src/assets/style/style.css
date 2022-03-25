@@ -179,7 +179,7 @@ footer {
   align-items: start;
 }
 .header .logo a {
-  font-size: 1.6rem;
+  font-size: clamp(1.125rem, 1.6vw, 1.9rem);
   font-weight: 600;
   text-transform: uppercase;
   line-height: 1;
@@ -212,6 +212,14 @@ footer {
   color: #e52315;
 }
 
+@media (max-width: 820px) {
+  .header {
+    height: auto;
+  }
+  .header .container {
+    padding-block: 1em;
+  }
+}
 .showcase {
   padding-block: 2em;
 }
@@ -347,7 +355,7 @@ footer {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: start;
-  margin-top: 1em;
+  margin-top: 1.5em;
 }
 .footer .footer-links a {
   display: inline-block;
@@ -380,4 +388,79 @@ footer {
   display: block;
   margin-top: 3em;
   color: #888888;
+}
+
+.sprache-bildung {
+  padding: 0;
+}
+.sprache-bildung .banner {
+  height: 60vh;
+  position: relative;
+}
+.sprache-bildung .banner::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: #55585e;
+  mix-blend-mode: multiply;
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+.sprache-bildung .banner img {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
+  z-index: 1;
+}
+.sprache-bildung .banner .title {
+  position: absolute;
+  inset: 50% auto auto 1em;
+  color: white;
+  z-index: 3;
+  max-width: 50%;
+  transform: translateY(-50%);
+  line-height: 1.2;
+}
+.sprache-bildung .sprache-bildung-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-auto-flow: dense;
+  justify-content: space-between;
+  align-items: start;
+  gap: 2em;
+}
+.sprache-bildung .text .details:not(:nth-of-type(1)) {
+  margin-top: 2em;
+}
+.sprache-bildung .text .details-list {
+  list-style: initial;
+}
+.sprache-bildung .text .details-list li {
+  font-size: 1.125rem;
+}
+.sprache-bildung .text .details-list li:not(:last-child) {
+  margin-bottom: 2em;
+}
+.sprache-bildung .text .inhalt {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: start;
+}
+.sprache-bildung .text .inhalt h1 {
+  margin-bottom: 0.5em;
+}
+.sprache-bildung .text .inhalt a {
+  color: #74adc3;
+}
+.sprache-bildung .text .inhalt a.active {
+  color: #e52315;
 }/*# sourceMappingURL=style.css.map */

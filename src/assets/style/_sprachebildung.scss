@@ -1,0 +1,81 @@
+.sprache-bildung {
+   padding: 0;
+
+   .banner {
+      height: 60vh;
+      position: relative;
+
+      &::after {
+         content: "";
+         height: 100%;
+         width: 100%;
+         background-color: $dark;
+         mix-blend-mode: multiply;
+         position: absolute;
+         inset: 0;
+         z-index: 2;
+      }
+
+      img {
+         position: absolute;
+         inset: 0;
+         height: 100%;
+         width: 100%;
+         object-fit: cover;
+         object-position: top center;
+         z-index: 1;
+      }
+
+      .title {
+         position: absolute;
+         inset: 50% auto auto 1em;
+         color: $white;
+         z-index: 3;
+         max-width: 50%;
+         transform: translateY(-50%);
+         line-height: 1.2;
+      }
+   }
+
+   .sprache-bildung-content {
+      @include grid($ai: start);
+      gap: 2em;
+   }
+
+   .text {
+      .details {
+         &:not(:nth-of-type(1)) {
+            margin-top: 2em;
+         }
+      }
+
+      .details-list {
+         list-style: initial;
+
+         li {
+            font-size: 1.125rem;
+
+            &:not(:last-child) {
+               margin-bottom: 2em;
+            }
+         }
+      }
+
+      .inhalt {
+         margin-top: 2em;
+         @include flex(column, $ai: start);
+
+         h1 {
+            margin-bottom: 0.5em;
+         }
+
+         a {
+            color: $blue;
+
+            &.active {
+               color: $primary;
+            }
+         }
+      }
+   }
+}

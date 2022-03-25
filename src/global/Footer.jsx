@@ -11,7 +11,7 @@ const Footer = () => {
 
             <div className="footer-content">
                <div className="footer-links">
-                  <Link to="/">Impresum / Disklaimar</Link>
+                  <Link to="/">Impressum / Disklaimer</Link>
                   <Link to="/">Datenschutz</Link>
                   <Link to="/">Technischeanforderungen</Link>
                </div>

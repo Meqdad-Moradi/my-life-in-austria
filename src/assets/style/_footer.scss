@@ -33,7 +33,7 @@
 
    .footer-links {
       @include flex(column, $ai: start);
-      margin-top: 1em;
+      margin-top: 1.5em;
 
       a {
          display: inline-block;
