@@ -1,0 +1,21 @@
+.header {
+   height: 70px;
+   background-color: $white;
+
+   .container {
+      @include flex();
+      height: inherit;
+      gap: 2em;
+   }
+
+   .nav-list {
+      @include flex();
+      gap: 2em;
+   }
+
+   .nav-list-item{
+      a.active{
+         color: $primary;
+      }
+   }
+}

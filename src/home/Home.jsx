@@ -1,7 +1,14 @@
 import React from "react";
+import Header from "../global/Header";
+import Showcase from "./Showcase";
 
 const Home = () => {
-   return <div>home</div>;
+   return (
+      <>
+         <Header />
+         <Showcase />
+      </>
+   );
 };
 
 export default Home;

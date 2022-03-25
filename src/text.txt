@@ -1,0 +1,59 @@
+article className="showcase-nav">
+               <h1 className='title'>stellenwert von Sprachen und Bildung</h1>
+               <p>einleitung</p>
+               <p>sprache</p>
+               <p>berufausbildung in Österreich: die Lehre</p>
+               <p>erwachsenenbildung</p>
+               <p>rechte & Pflicht</p>
+            </article>
+
+            <article className="showcase-nav">
+               <h1 className='title'>Arbeitswelt und Wirtschaft</h1>
+               <p>einleitung</p>
+               <p>Unterschiedliche Arbeitsformen</p>
+               <p>Pflichtversicherung</p>
+               <p>
+                  Gleichberechtigung und Gleichbehandlung in der Arbeitswelt
+               </p>
+               <p>Umgang mit Geld</p>
+            </article>
+
+            <article className="showcase-nav">
+               <h1 className='title'>Gesungheit</h1>
+               <p>einleitung</p>
+               <p>Allgemeine Information</p>
+               <p>Notfallnummern</p>
+               <p>Gesundheitvorsorge</p>
+            </article>
+
+            <article className="showcase-nav">
+               <h1 className='title'>Wohnen und Nachbarschaft</h1>
+               <p>einleitung</p>
+               <p>Hausordnung</p>
+               <p>Ruhezeiten und Nachtruhe</p>
+               <p>Müllentsorgung</p>
+               <p>Informelle Regeln der Nachbarschaft</p>
+            </article>
+
+            <article className="showcase-nav">
+               <h1 className='title'>Prinzipien des Zusammenlebens - rechtliche Integration</h1>
+               <p>einleitung</p>
+               <p>Menschenwürde - durch Grund - und Menschenrechte</p>
+               <p>
+                  Freiheit - durch Freiheitsrechte, Verantwortung und Soldarität
+               </p>
+               <p>
+                  Sicherheit - durch Machtverteilung, Demokratie und Rechtsstaat
+               </p>
+            </article>
+
+            <article className="showcase-nav">
+               <h1 className='title'>Vielfalt des Zusammenlebens - kulturelle Integration</h1>
+               <p>einleitung</p>
+               <p>Verhältnis von Religion und Staat</p>
+               <p>Religion</p>
+               <p>Familie und Zusammenleben</p>
+               <p>Gewaltfreies Familienleben</p>
+               <p>Freiwilliges Engagement</p>
+               <p>Interkulturelle Begegnung</p>
+            </article>

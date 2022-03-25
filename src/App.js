@@ -10,7 +10,6 @@ function App() {
       <Routes>
          <Route path="/home" element={<Navigate to="/" />} />
          <Route path="/" element={<Home />} />
-         <Route path="/showcase" element={<Showcase />} />
          <Route path="*" element={<Notfound />} />
       </Routes>
    );
