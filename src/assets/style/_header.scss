@@ -1,6 +1,10 @@
 .header {
    height: 70px;
    background-color: $white;
+   position: sticky;
+   top: 0;
+   left: 0;
+   width: 100%;
 
    .container {
       @include flex();
@@ -8,14 +12,33 @@
       gap: 2em;
    }
 
+   .logo {
+      a {
+         font-size: 1.6rem;
+         font-weight: 600;
+         text-transform: uppercase;
+         color: $primary;
+         text-decoration: none;
+      }
+   }
+
    .nav-list {
       @include flex();
       gap: 2em;
    }
 
-   .nav-list-item{
-      a.active{
-         color: $primary;
+   .nav-list-item {
+      a {
+         color: $black;
+         transition: $transition;
+         text-decoration: none;
+
+         &:hover {
+            color: $primary;
+         }
+         &.active {
+            color: $primary;
+         }
       }
    }
 }

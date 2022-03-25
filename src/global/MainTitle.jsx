@@ -1,6 +1,6 @@
 import React from "react";
 
-const MinTitle = ({ mainTitle, subTitle }) => {
+const MainTitle = ({ mainTitle, subTitle }) => {
    return (
       <div className="main-title">
          <h1 className="title">{mainTitle}</h1>
@@ -9,4 +9,4 @@ const MinTitle = ({ mainTitle, subTitle }) => {
    );
 };
 
-export default MinTitle;
+export default MainTitle;

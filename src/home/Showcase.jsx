@@ -1,5 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {
+   FaLanguage,
+   FaBriefcase,
+   FaFileMedical,
+   FaPeopleCarry,
+   FaAnchor,
+   FaAccusoft,
+} from "react-icons/fa";
 
 const Showcase = () => {
    return (
@@ -7,7 +15,9 @@ const Showcase = () => {
          <div className="container">
             <Link to="/">
                <article className="showcase-nav">
-                  <div className="icon">icon</div>
+                  <div className="icon">
+                     <FaLanguage />
+                  </div>
                   <div className="text">
                      <h1 className="title">
                         stellenwert von Sprachen und Bildung
@@ -20,7 +30,9 @@ const Showcase = () => {
 
             <Link to="/">
                <article className="showcase-nav">
-                  <div className="icon">icon</div>
+                  <div className="icon">
+                     <FaBriefcase />
+                  </div>
                   <div className="text">
                      <h1 className="title">Arbeitswelt und Wirtschaft</h1>
                      <p>einleitung</p>
@@ -31,9 +43,11 @@ const Showcase = () => {
 
             <Link to="/">
                <article className="showcase-nav">
-                  <div className="icon">icon</div>
+                  <div className="icon">
+                     <FaFileMedical />
+                  </div>
                   <div className="text">
-                     <h1 className="title">Gesungheit</h1>
+                     <h1 className="title">Gesundheit</h1>
                      <p>einleitung</p>
                      <p>Allgemeine Information</p>
                   </div>
@@ -42,7 +56,9 @@ const Showcase = () => {
 
             <Link to="/">
                <article className="showcase-nav">
-                  <div className="icon">icon</div>
+                  <div className="icon">
+                     <FaPeopleCarry />
+                  </div>
                   <div className="text">
                      <h1 className="title">Wohnen und Nachbarschaft</h1>
                      <p>einleitung</p>
@@ -53,7 +69,9 @@ const Showcase = () => {
 
             <Link to="/">
                <article className="showcase-nav">
-                  <div className="icon">icon</div>
+                  <div className="icon">
+                     <FaAnchor />
+                  </div>
                   <div className="text">
                      <h1 className="title">
                         Prinzipien des Zusammenlebens - rechtliche Integration
@@ -66,7 +84,9 @@ const Showcase = () => {
 
             <Link to="/">
                <article className="showcase-nav">
-                  <div className="icon">icon</div>
+                  <div className="icon">
+                     <FaAccusoft />
+                  </div>
                   <div className="text">
                      <h1 className="title">
                         Vielfalt des Zusammenlebens - kulturelle Integration
