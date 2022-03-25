@@ -43,6 +43,10 @@
    }
 
    .text {
+      padding: 2em;
+      border-radius: $border-radius;
+      background-color: $white;
+
       .details {
          &:not(:nth-of-type(1)) {
             margin-top: 2em;
@@ -62,20 +66,32 @@
       }
 
       .inhalt {
-         margin-top: 2em;
          @include flex(column, $ai: start);
+         margin-top: 2em;
 
          h1 {
             margin-bottom: 0.5em;
+            color: $purple;
          }
 
          a {
-            color: $blue;
+            color: $purple;
+            font-size: 0.875rem;
+            transition: $transition;
+
+            &:hover {
+               text-decoration: underline;
+            }
 
             &.active {
                color: $primary;
             }
          }
       }
+   }
+
+   .img-box {
+      border-radius: $border-radius;
+      overflow: hidden;
    }
 }

@@ -68,7 +68,7 @@ const SpracheUndBildung = () => {
                   </div>
                   <div className="img-box">
                      <img
-                        src="https://images.pexels.com/photos/5538577/pexels-photo-5538577.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                        src="https://images.pexels.com/photos/7540263/pexels-photo-7540263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                         alt="education"
                      />
                   </div>

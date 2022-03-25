@@ -40,11 +40,11 @@ h6 {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 h3 {
@@ -62,11 +62,11 @@ p {
 }
 
 p.details {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 small {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 ol,
@@ -435,6 +435,11 @@ footer {
   align-items: start;
   gap: 2em;
 }
+.sprache-bildung .text {
+  padding: 2em;
+  border-radius: 0.3em;
+  background-color: white;
+}
 .sprache-bildung .text .details:not(:nth-of-type(1)) {
   margin-top: 2em;
 }
@@ -448,19 +453,47 @@ footer {
   margin-bottom: 2em;
 }
 .sprache-bildung .text .inhalt {
-  margin-top: 2em;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: start;
+  margin-top: 2em;
 }
 .sprache-bildung .text .inhalt h1 {
   margin-bottom: 0.5em;
+  color: #8091cb;
 }
 .sprache-bildung .text .inhalt a {
-  color: #74adc3;
+  color: #8091cb;
+  font-size: 0.875rem;
+  transition: all 0.4s ease-in-out;
+}
+.sprache-bildung .text .inhalt a:hover {
+  text-decoration: underline;
 }
 .sprache-bildung .text .inhalt a.active {
   color: #e52315;
+}
+.sprache-bildung .img-box {
+  border-radius: 0.3em;
+  overflow: hidden;
+}
+
+.notfound {
+  display: grid;
+  place-items: center;
+  min-height: 80vh;
+  text-align: center;
+}
+.notfound h1 {
+  font-size: 4rem;
+  line-height: 1.7;
+  color: #e52315;
+}
+.notfound h3 {
+  font-weight: 500;
+}
+.notfound p {
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,20 @@
+.notfound {
+   display: grid;
+   place-items: center;
+   min-height: 80vh;
+   text-align: center;
+
+   h1 {
+      font-size: 4rem;
+      line-height: 1.7;
+      color: $primary;
+   }
+
+   h3 {
+      font-weight: 500;
+   }
+
+   p {
+      margin: 0;
+   }
+}

@@ -5,25 +5,15 @@ const Erwachsenenbildung = () => {
       <>
          <h1>erwachsenenbildung</h1>
          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam et
-            voluptates magni modi ex ab incidunt eveniet explicabo sint dolor
-            iste expedita, quaerat blanditiis nemo, dolorum placeat eum
-            recusandae dolores rem! Ut sequi quisquam fuga reprehenderit id
-            dolorem placeat necessitatibus autem unde! Libero vitae assumenda
-            vel iusto veniam quas maxime.
-         </p>
-         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-            eveniet molestias aliquam, omnis dicta provident illo quasi fugiat
-            incidunt obcaecati perferendis aliquid quas unde consectetur amet
-            harum sed voluptatum vel!
-         </p>
-         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi non
-            mollitia, hic corrupti deleniti, magni in id iure ex at, dolor
-            voluptatibus facilis exercitationem delectus! Iste, odio eligendi,
-            nesciunt quod, aliquid laboriosam rem consequuntur sapiente
-            architecto nihil eius libero ex!
+            Nicht nur Kinder und Junge Menschen können sich in Österreich
+            bilden. Auch für Erwachsene Menschen gibt es viel Möglichkeiten
+            etwas zu lernen. Es gibt nicht nur Sprachkurs. Erwachsene können
+            z.B. Schulabschlüsse noch nachholen, wenn sie bereits ins
+            Arbeitsleben eigtreten sind. Es gibt viele öffentliche und private
+            Stellen, wo sie dass machen können. Österreich hat ein großes
+            Angebot für alle Menschen, die etwas lernen wollen. Jeder Mensch
+            soll diese Möglichkeiten nützen und damit das Beste aus seinem Leben
+            machen. Dafür ist man selbst verantwortlich.
          </p>
       </>
    );
