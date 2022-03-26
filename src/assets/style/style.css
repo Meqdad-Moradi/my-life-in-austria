@@ -259,6 +259,30 @@ footer {
 .showcase .container a:nth-of-type(6) {
   background-color: #8091cb;
 }
+.showcase .container .map-img {
+  max-width: 90%;
+  padding-top: 3em;
+}
+.showcase .container .logo a {
+  display: inline-block;
+  font-size: 3.5rem;
+  color: #e52315;
+  line-height: 1.2;
+  cursor: auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+.showcase .container .logo a small {
+  display: block;
+  font-size: 1rem;
+  color: #55585e;
+  text-transform: uppercase;
+}
 .showcase .showcase-nav {
   display: grid;
   gap: 2em;

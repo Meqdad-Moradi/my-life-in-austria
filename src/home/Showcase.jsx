@@ -8,11 +8,16 @@ import {
    FaAnchor,
    FaAccusoft,
 } from "react-icons/fa";
+import Logo from "./../global/Logo";
+import map from "./../assets/images/map.png";
 
 const Showcase = () => {
    return (
       <div className="showcase">
          <div className="container">
+            <Logo />
+            <img className="map-img" src={map} alt="map" />
+
             <Link to="/spracheundbildung">
                <article className="showcase-nav">
                   <div className="icon">

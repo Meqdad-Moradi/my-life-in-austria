@@ -34,6 +34,32 @@
             background-color: $purple;
          }
       }
+
+      .map-img{
+         max-width: 90%;
+         padding-top: 3em;
+      }
+
+      .logo {
+         a {
+            display: inline-block;
+            font-size: 3.5rem;
+            color: $primary;
+            line-height: 1.2;
+            cursor: auto;
+            user-select: none;
+            pointer-events: none;
+            background-color: transparent;
+            box-shadow: none;
+
+            small {
+               display: block;
+               font-size: 1rem;
+               color: $dark;
+               text-transform: uppercase;
+            }
+         }
+      }
    }
    .showcase-nav {
       display: grid;
