@@ -1,6 +1,6 @@
 import React from "react";
 
-const Einleitung = () => {
+const sEinleitung = () => {
    return (
       <>
          <h1>einleitung</h1>
@@ -29,4 +29,4 @@ const Einleitung = () => {
    );
 };
 
-export default Einleitung;
+export default sEinleitung;

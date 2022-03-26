@@ -51,7 +51,7 @@ const SpracheUndBildung = () => {
 
                      <div className="inhalt">
                         <h1>inhalt</h1>
-                        <NavLink to="einleitung">einleitung</NavLink>
+                        <NavLink to="seinleitung">einleitung</NavLink>
                         <NavLink to="sprache">sprache</NavLink>
                         <NavLink to="berufsausbildung">
                            berufausbildung in Österreich: die Lehre

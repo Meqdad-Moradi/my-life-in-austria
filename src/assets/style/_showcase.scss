@@ -1,5 +1,4 @@
 .showcase {
-
    .showcase-banner {
       @include grid();
       min-height: calc(100vh - 70px - 2.95em);
@@ -94,6 +93,13 @@
 
 @media (max-width: 820px) {
    .showcase {
+      .showcase-banner {
+         min-height: 70vh;
+
+         .slogan {
+            align-self: end;
+         }
+      }
       .showcase-body {
          @include grid();
          align-items: initial;

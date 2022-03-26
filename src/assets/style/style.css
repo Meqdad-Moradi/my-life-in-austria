@@ -97,7 +97,7 @@ footer {
 .btn {
   display: inline-block;
   margin-top: 2em;
-  padding: 0.3em 1em;
+  padding: 0.5em 1em;
   text-transform: capitalize;
   cursor: pointer;
   -webkit-user-select: none;
@@ -319,6 +319,12 @@ footer {
 }
 
 @media (max-width: 820px) {
+  .showcase .showcase-banner {
+    min-height: 70vh;
+  }
+  .showcase .showcase-banner .slogan {
+    align-self: end;
+  }
   .showcase .showcase-body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
