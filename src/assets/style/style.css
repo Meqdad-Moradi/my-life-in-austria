@@ -473,29 +473,34 @@ footer {
   transform: translateY(-50%);
   line-height: 1.2;
 }
-.sprache-bildung .einleitung {
-  display: flow-root;
-}
-.sprache-bildung .einleitung img {
-  height: 70vh;
-  margin-left: 2em;
-  border-radius: 0.3em;
-}
 .sprache-bildung .text {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-auto-flow: dense;
   justify-content: space-between;
-  align-items: center;
-}
-.sprache-bildung .text .einleitung,
-.sprache-bildung .text .inhalt-details {
+  align-items: start;
   padding: 2em;
   border-radius: 0.3em;
   background-color: hsl(0deg, 0%, 100%);
+  gap: 2em;
+  box-shadow: 0 0 10px -4px hsla(0deg, 0%, 0%, 0.5);
 }
-.sprache-bildung .text .details:not(:nth-of-type(1)) {
-  margin-top: 2em;
+.sprache-bildung .text .img-box {
+  max-width: auto;
+  border-radius: 0.3em;
+  overflow: hidden;
+}
+.sprache-bildung .text .img-box img {
+  height: 70vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 2em;
+  border-radius: 0.3em;
+}
+.sprache-bildung .text .einleitung {
+  display: flow-root;
+  order: -1;
 }
 .sprache-bildung .text .details-list {
   list-style-type: disc;
@@ -518,10 +523,6 @@ footer {
   align-items: start;
   margin-top: 2em;
 }
-.sprache-bildung .text .inhalt .inhalt-title:hover {
-  text-decoration: none;
-  cursor: auto;
-}
 .sprache-bildung .text .inhalt h1 {
   margin-bottom: 0.5em;
   color: hsl(226deg, 62%, 70%);
@@ -537,12 +538,10 @@ footer {
 .sprache-bildung .text .inhalt a.active {
   color: hsl(4deg, 83%, 49%);
 }
-.sprache-bildung .text .inhalt-details {
-  margin-top: 2em;
-}
-.sprache-bildung .img-box {
+.sprache-bildung .inhalt-details {
+  background-color: hsl(0deg, 0%, 100%);
+  box-shadow: 0 0 10px -4px hsla(0deg, 0%, 0%, 0.5);
   border-radius: 0.3em;
-  overflow: hidden;
 }
 
 .notfound {

@@ -1,9 +1,19 @@
 import React from "react";
-import { Outlet, NavLink, Link } from "react-router-dom";
+import {
+   Outlet,
+   NavLink,
+   Link,
+   useLocation,
+   useNavigate,
+} from "react-router-dom";
 import Footer from "../global/Footer";
 import Header from "../global/Header";
+import SEinleitung from "./sEinleitung";
 
 const SpracheUndBildung = () => {
+   const location = useLocation();
+   const navigate = useNavigate();
+
    return (
       <>
          <Header />
@@ -63,12 +73,7 @@ const SpracheUndBildung = () => {
                         </ul>
 
                         <div className="inhalt">
-                           <Link
-                              className="inhalt-title"
-                              to="/spracheundbildung"
-                           >
-                              <h1>inhalt</h1>
-                           </Link>
+                           <h1>inhalt</h1>
                            <NavLink to="seinleitung">einleitung</NavLink>
                            <NavLink to="sprache">sprache</NavLink>
                            <NavLink to="berufsausbildung">
@@ -82,10 +87,27 @@ const SpracheUndBildung = () => {
                            </NavLink>
                         </div>
                      </div>
+                  </div>
 
-                     <div className="inhalt-details">
-                        <Outlet />
-                     </div>
+                  {/* details of inhalt */}
+                  <div
+                     className="inhalt-details"
+                     style={
+                        location.pathname === "/spracheundbildung"
+                           ? { padding: "0" }
+                           : { padding: "2em", marginTop: "2em" }
+                     }
+                  >
+                     <Outlet />
+
+                     {location.pathname !== "/spracheundbildung" && (
+                        <button
+                           className="btn"
+                           onClick={() => navigate("/spracheundbildung")}
+                        >
+                           close
+                        </button>
+                     )}
                   </div>
                </section>
             </div>

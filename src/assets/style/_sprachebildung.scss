@@ -37,36 +37,31 @@
       }
    }
 
-   // .sprache-bildung-content {
-   //    @include grid($ai: start);
-   //    gap: 2em;
-   // }
-
-   .einleitung {
-      display: flow-root;
-
-      img {
-         // float: right;
-         height: 70vh;
-         margin-left: 2em;
-         border-radius: $border-radius;
-      }
-   }
-
    .text {
-      @include grid();
+      @include grid($ai: start);
+      padding: 2em;
+      border-radius: $border-radius;
+      background-color: $white;
+      gap: 2em;
+      box-shadow: $boxshadow;
 
-      .einleitung,
-      .inhalt-details {
-         padding: 2em;
+      .img-box {
+         max-width: auto;
          border-radius: $border-radius;
-         background-color: $white;
+         overflow: hidden;
+
+         img {
+            height: 70vh;
+            width: 100%;
+            object-fit: cover;
+            margin-left: 2em;
+            border-radius: $border-radius;
+         }
       }
 
-      .details {
-         &:not(:nth-of-type(1)) {
-            margin-top: 2em;
-         }
+      .einleitung {
+         display: flow-root;
+         order: -1;
       }
 
       .details-list {
@@ -90,11 +85,6 @@
          @include flex(column, $ai: start);
          margin-top: 2em;
 
-         .inhalt-title:hover {
-            text-decoration: none;
-            cursor: auto;
-         }
-
          h1 {
             margin-bottom: 0.5em;
             color: $purple;
@@ -114,14 +104,11 @@
             }
          }
       }
-
-      .inhalt-details {
-         margin-top: 2em;
-      }
    }
 
-   .img-box {
+   .inhalt-details {
+      background-color: $white;
+      box-shadow: $boxshadow;
       border-radius: $border-radius;
-      overflow: hidden;
    }
 }

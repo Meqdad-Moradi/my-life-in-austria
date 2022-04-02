@@ -1,15 +1,11 @@
 import React, { useState } from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, useLocation } from "react-router-dom";
 import Footer from "../global/Footer";
 import Header from "../global/Header";
 import AboutDetails from "./AboutDetails";
 
 const About = () => {
-   const [activeTab, setActiveTab] = useState(false);
-
-   const changeActiveTab = () => {
-      setActiveTab(true);
-   };
+   const location = useLocation();
    return (
       <>
          <Header />
@@ -17,38 +13,24 @@ const About = () => {
             <div className="container">
                <div className="content">
                   <div className="filter-btns">
-                     <NavLink
-                        className="filter-btn"
-                        to="about-details"
-                        onClick={changeActiveTab}
-                     >
+                     <NavLink className="filter-btn" to="about-details">
                         About
                      </NavLink>
-                     <NavLink
-                        className="filter-btn"
-                        to="mession"
-                        onClick={changeActiveTab}
-                     >
+                     <NavLink className="filter-btn" to="mession">
                         Mession
                      </NavLink>
-                     <NavLink
-                        className="filter-btn"
-                        to="vision"
-                        onClick={changeActiveTab}
-                     >
+                     <NavLink className="filter-btn" to="vision">
                         Vision
                      </NavLink>
                   </div>
                   <div className="about-details">
-                     {activeTab ? <Outlet /> : <AboutDetails />}
+                     {location.pathname === "/about" ? (
+                        <AboutDetails />
+                     ) : (
+                        <Outlet />
+                     )}
                   </div>
                </div>
-               {/* <div className="img-box">
-                  <img
-                     src="https://images.unsplash.com/photo-1597086831879-756db15e81d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YXVzdHJpYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60"
-                     alt="about-us"
-                  />
-               </div> */}
             </div>
          </main>
          <Footer />
