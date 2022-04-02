@@ -12,7 +12,7 @@ const SpracheUndBildung = () => {
                <div className="banner">
                   <img
                      src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                     alt="girl"
+                     alt="banner"
                   />
                   <h1 className="title">
                      Stellenwert von Sprachen und Bildung

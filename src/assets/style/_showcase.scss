@@ -33,11 +33,16 @@
       align-items: initial;
 
       a {
+         @include flex(column, center);
          overflow: hidden;
          border-radius: $border-radius;
          padding: 2em;
-         @include flex(column, center);
          box-shadow: $boxshadow;
+         transition: $transition;
+
+         &:hover {
+            transform: translateY(-5px);
+         }
 
          &:nth-of-type(1) {
             background-color: $purple;
@@ -91,15 +96,21 @@
    }
 }
 
-@media (max-width: 820px) {
+@media (max-width: 830px) {
    .showcase {
       .showcase-banner {
          min-height: 70vh;
+         grid-template-columns: 1fr;
 
          .slogan {
             align-self: end;
          }
       }
+   }
+}
+
+@media (max-width: 768px) {
+   .showcase {
       .showcase-body {
          @include grid();
          align-items: initial;
