@@ -72,6 +72,7 @@ small {
 ol,
 ul {
   list-style: none;
+  color: hsl(220deg, 5%, 35%);
 }
 
 img,
@@ -472,16 +473,22 @@ footer {
   transform: translateY(-50%);
   line-height: 1.2;
 }
-.sprache-bildung .sprache-bildung-content {
+.sprache-bildung .einleitung {
+  display: flow-root;
+}
+.sprache-bildung .einleitung img {
+  height: 70vh;
+  margin-left: 2em;
+  border-radius: 0.3em;
+}
+.sprache-bildung .text {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-auto-flow: dense;
   justify-content: space-between;
-  align-items: start;
-  gap: 2em;
+  align-items: center;
 }
-.sprache-bildung .text .inhalt,
-.sprache-bildung .text .details,
+.sprache-bildung .text .einleitung,
 .sprache-bildung .text .inhalt-details {
   padding: 2em;
   border-radius: 0.3em;
@@ -491,7 +498,7 @@ footer {
   margin-top: 2em;
 }
 .sprache-bildung .text .details-list {
-  list-style: initial;
+  list-style-type: disc;
 }
 .sprache-bildung .text .details-list li {
   font-size: 1.125rem;
@@ -564,6 +571,16 @@ footer {
   align-items: start;
   gap: 2em;
 }
+.about-page section {
+  padding: 0;
+}
+.about-page .content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-auto-flow: dense;
+  justify-content: space-between;
+  align-items: center;
+}
 .about-page .filter-btns {
   display: flex;
   flex-direction: row;
@@ -571,6 +588,12 @@ footer {
   justify-content: start;
   align-items: center;
   gap: 1em;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  justify-self: end;
+  align-self: start;
+  margin-top: 5px;
+  z-index: 2;
 }
 .about-page .filter-btns .filter-btn {
   display: inline-block;
@@ -586,4 +609,38 @@ footer {
 .about-page .img-box {
   border-radius: 0.3em;
   overflow: hidden;
+}
+.about-page .about-details {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  display: flow-root;
+}
+.about-page .about-details img {
+  float: right;
+  max-width: 50%;
+  margin-left: 1.5em;
+  margin-top: 2em;
+  border-radius: 0.3em;
+}
+.about-page .about-list {
+  list-style-type: disc;
+  margin-left: 2em;
+}
+
+@media (max-width: 1080px) {
+  .about-page .filter-btns {
+    justify-self: start;
+    margin-top: 0;
+    margin-bottom: 2em;
+  }
+  .about-page .about-details {
+    grid-row: initial !important;
+  }
+}
+@media (max-width: 768px) {
+  .about-page .about-details img {
+    float: initial;
+    max-width: 100%;
+    margin-left: 0em !important;
+  }
 }/*# sourceMappingURL=style.css.map */

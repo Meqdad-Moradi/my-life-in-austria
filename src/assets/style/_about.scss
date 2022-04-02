@@ -4,9 +4,23 @@
       gap: 2em;
    }
 
+   section {
+      padding: 0;
+   }
+
+   .content {
+      @include grid();
+   }
+
    .filter-btns {
       @include flex($jc: start);
       gap: 1em;
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+      justify-self: end;
+      align-self: start;
+      margin-top: 5px;
+      z-index: 2;
 
       .filter-btn {
          display: inline-block;
@@ -26,5 +40,48 @@
    .img-box {
       border-radius: $border-radius;
       overflow: hidden;
+   }
+
+   //    about details
+   .about-details {
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+      display: flow-root;
+
+      img {
+         float: right;
+         max-width: 50%;
+         margin-left: 1.5em;
+         margin-top: 2em;
+         border-radius: $border-radius;
+      }
+   }
+   .about-list {
+      list-style-type: disc;
+      margin-left: 2em;
+   }
+}
+
+@media (max-width: 1080px) {
+   .about-page {
+      .filter-btns {
+         justify-self: start;
+         margin-top: 0;
+         margin-bottom: 2em;
+      }
+
+      .about-details {
+         grid-row: initial !important;
+      }
+   }
+}
+
+@media (max-width: 768px) {
+   .about-page {
+      .about-details img {
+         float: initial;
+         max-width: 100%;
+         margin-left: 0em !important;
+      }
    }
 }

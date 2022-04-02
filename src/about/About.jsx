@@ -43,12 +43,12 @@ const About = () => {
                      {activeTab ? <Outlet /> : <AboutDetails />}
                   </div>
                </div>
-               <div className="img-box">
+               {/* <div className="img-box">
                   <img
                      src="https://images.unsplash.com/photo-1597086831879-756db15e81d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YXVzdHJpYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60"
                      alt="about-us"
                   />
-               </div>
+               </div> */}
             </div>
          </main>
          <Footer />

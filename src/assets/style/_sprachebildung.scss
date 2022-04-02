@@ -37,14 +37,26 @@
       }
    }
 
-   .sprache-bildung-content {
-      @include grid($ai: start);
-      gap: 2em;
+   // .sprache-bildung-content {
+   //    @include grid($ai: start);
+   //    gap: 2em;
+   // }
+
+   .einleitung {
+      display: flow-root;
+
+      img {
+         // float: right;
+         height: 70vh;
+         margin-left: 2em;
+         border-radius: $border-radius;
+      }
    }
 
    .text {
-      .inhalt,
-      .details,
+      @include grid();
+
+      .einleitung,
       .inhalt-details {
          padding: 2em;
          border-radius: $border-radius;
@@ -58,7 +70,7 @@
       }
 
       .details-list {
-         list-style: initial;
+         list-style-type: disc;
 
          li {
             font-size: 1.125rem;

@@ -21,7 +21,13 @@ const SpracheUndBildung = () => {
 
                <section className="sprache-bildung-content">
                   <div className="text">
-                     <div className="details einleitung">
+                     <div className="img-box">
+                        <img
+                           src="https://images.pexels.com/photos/7540263/pexels-photo-7540263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                           alt=""
+                        />
+                     </div>
+                     <div className="einleitung">
                         <ul className="details-list">
                            <li>
                               <span>
@@ -55,31 +61,31 @@ const SpracheUndBildung = () => {
                               </span>
                            </li>
                         </ul>
+
+                        <div className="inhalt">
+                           <Link
+                              className="inhalt-title"
+                              to="/spracheundbildung"
+                           >
+                              <h1>inhalt</h1>
+                           </Link>
+                           <NavLink to="seinleitung">einleitung</NavLink>
+                           <NavLink to="sprache">sprache</NavLink>
+                           <NavLink to="berufsausbildung">
+                              berufausbildung in Österreich: die Lehre
+                           </NavLink>
+                           <NavLink to="erwachsenenbildung">
+                              erwachsenenbildung
+                           </NavLink>
+                           <NavLink to="recht-pflicht">
+                              rechte & Pflicht
+                           </NavLink>
+                        </div>
                      </div>
 
-                     <div className="inhalt">
-                        <Link className="inhalt-title" to="/spracheundbildung">
-                           <h1>inhalt</h1>
-                        </Link>
-                        <NavLink to="seinleitung">einleitung</NavLink>
-                        <NavLink to="sprache">sprache</NavLink>
-                        <NavLink to="berufsausbildung">
-                           berufausbildung in Österreich: die Lehre
-                        </NavLink>
-                        <NavLink to="erwachsenenbildung">
-                           erwachsenenbildung
-                        </NavLink>
-                        <NavLink to="recht-pflicht">rechte & Pflicht</NavLink>
-                     </div>
                      <div className="inhalt-details">
                         <Outlet />
                      </div>
-                  </div>
-                  <div className="img-box">
-                     <img
-                        src="https://images.pexels.com/photos/7540263/pexels-photo-7540263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        alt="education"
-                     />
                   </div>
                </section>
             </div>
