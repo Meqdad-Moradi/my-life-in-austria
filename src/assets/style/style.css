@@ -129,6 +129,7 @@ footer {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   letter-spacing: 2px;
+  color: hsl(220deg, 5%, 12%);
 }
 
 .main-title {
@@ -480,7 +481,8 @@ footer {
   gap: 2em;
 }
 .sprache-bildung .text .inhalt,
-.sprache-bildung .text .details {
+.sprache-bildung .text .details,
+.sprache-bildung .text .inhalt-details {
   padding: 2em;
   border-radius: 0.3em;
   background-color: hsl(0deg, 0%, 100%);
@@ -493,9 +495,13 @@ footer {
 }
 .sprache-bildung .text .details-list li {
   font-size: 1.125rem;
+  color: hsl(226deg, 62%, 70%);
+}
+.sprache-bildung .text .details-list li span {
+  color: hsl(220deg, 5%, 12%);
 }
 .sprache-bildung .text .details-list li:not(:last-child) {
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 }
 .sprache-bildung .text .inhalt {
   display: flex;
@@ -548,4 +554,36 @@ footer {
 }
 .notfound p {
   margin: 0;
+}
+
+.about-page .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-auto-flow: dense;
+  justify-content: space-between;
+  align-items: start;
+  gap: 2em;
+}
+.about-page .filter-btns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  gap: 1em;
+}
+.about-page .filter-btns .filter-btn {
+  display: inline-block;
+  background-color: hsl(4deg, 83%, 49%);
+  color: hsl(240deg, 20%, 98%);
+  padding: 0.5em 1em;
+  border-radius: 0.3em;
+  transition: all 0.4s ease-in-out;
+}
+.about-page .filter-btns .filter-btn:hover, .about-page .filter-btns .filter-btn.active {
+  background-color: hsl(4deg, 83%, 60%);
+}
+.about-page .img-box {
+  border-radius: 0.3em;
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */

@@ -44,7 +44,8 @@
 
    .text {
       .inhalt,
-      .details {
+      .details,
+      .inhalt-details {
          padding: 2em;
          border-radius: $border-radius;
          background-color: $white;
@@ -61,9 +62,14 @@
 
          li {
             font-size: 1.125rem;
+            color: $purple;
+
+            span {
+               color: $black;
+            }
 
             &:not(:last-child) {
-               margin-bottom: 2em;
+               margin-bottom: 1.5em;
             }
          }
       }

@@ -24,27 +24,35 @@ const SpracheUndBildung = () => {
                      <div className="details einleitung">
                         <ul className="details-list">
                            <li>
-                              Deutsch zu lernen ist absolut notwendig, um in
-                              Österreich einen Beruf zu finden um sich im Alltag
-                              zurechtzufinden.
+                              <span>
+                                 Deutsch zu lernen ist absolut notwendig, um in
+                                 Österreich einen Beruf zu finden um sich im
+                                 Alltag zurechtzufinden.
+                              </span>
                            </li>
                            <li>
-                              In Österreich gibt es gute Möglichkeiten sich zu
-                              bilden, also zu lernen und Qualifikationen zu
-                              erwerben. Das Bildungssystem ist für alle offen.
-                              Der Staat Österreich finanziert diese Bildung zu
-                              einem großen Teil.
+                              <span>
+                                 In Österreich gibt es gute Möglichkeiten sich
+                                 zu bilden, also zu lernen und Qualifikationen
+                                 zu erwerben. Das Bildungssystem ist für alle
+                                 offen. Der Staat Österreich finanziert diese
+                                 Bildung zu einem großen Teil.
+                              </span>
                            </li>
                            <li>
-                              Bildung ist für die Menschen in Österreich sehr
-                              wichtig. Frauen erhalten in Österreich die gleiche
-                              Bildung wie Männer.
+                              <span>
+                                 Bildung ist für die Menschen in Österreich sehr
+                                 wichtig. Frauen erhalten in Österreich die
+                                 gleiche Bildung wie Männer.
+                              </span>
                            </li>
                            <li>
-                              Kinder müssen in Österreich in die Schule gehen.
-                              Die Eltern kummern sich darum, dass die Kinder die
-                              Schule besuchen und unterstützen sie im
-                              schulischen Fortkommen.
+                              <span>
+                                 Kinder müssen in Österreich in die Schule
+                                 gehen. Die Eltern kummern sich darum, dass die
+                                 Kinder die Schule besuchen und unterstützen sie
+                                 im schulischen Fortkommen.
+                              </span>
                            </li>
                         </ul>
                      </div>

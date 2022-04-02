@@ -1,5 +1,9 @@
 import React from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
+import About from "./about/About";
+import AboutDetails from "./about/AboutDetails";
+import Mession from "./about/Mession";
+import Vission from "./about/Vission";
 import "./assets/style/style.css";
 import Notfound from "./global/Notfound";
 import Home from "./home/Home";
@@ -16,6 +20,11 @@ function App() {
          <Routes>
             <Route path="/home" element={<Navigate to="/" />} />
             <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />}>
+               <Route path="about-details" element={<AboutDetails />} />
+               <Route path="mession" element={<Mession />} />
+               <Route path="vision" element={<Vission />} />
+            </Route>
             <Route path="/spracheundbildung" element={<SpracheUndBildung />}>
                <Route path="seinleitung" element={<SEinleitung />} />
                <Route path="sprache" element={<Sprache />} />

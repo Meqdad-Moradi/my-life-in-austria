@@ -12,7 +12,7 @@ const Nav = () => {
                <NavLink to="/about">über uns</NavLink>
             </li>
             <li className="nav-list-item">
-               <NavLink to="/contact">kontakt</NavLink>
+               <a href="#contact">kontakt</a>
             </li>
          </ul>
       </nav>

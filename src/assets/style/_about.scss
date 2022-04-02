@@ -1,0 +1,30 @@
+.about-page {
+   .container {
+      @include grid($ai: start);
+      gap: 2em;
+   }
+
+   .filter-btns {
+      @include flex($jc: start);
+      gap: 1em;
+
+      .filter-btn {
+         display: inline-block;
+         background-color: $primary;
+         color: $light;
+         padding: 0.5em 1em;
+         border-radius: $border-radius;
+         transition: $transition;
+
+         &:hover,
+         &.active {
+            background-color: $secondary;
+         }
+      }
+   }
+
+   .img-box {
+      border-radius: $border-radius;
+      overflow: hidden;
+   }
+}
