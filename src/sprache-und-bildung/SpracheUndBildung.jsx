@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet, NavLink } from "react-router-dom";
+import { Outlet, NavLink, Link } from "react-router-dom";
 import Footer from "../global/Footer";
 import Header from "../global/Header";
 
@@ -50,7 +50,9 @@ const SpracheUndBildung = () => {
                      </div>
 
                      <div className="inhalt">
-                        <h1>inhalt</h1>
+                        <Link className="inhalt-title" to="/spracheundbildung">
+                           <h1>inhalt</h1>
+                        </Link>
                         <NavLink to="seinleitung">einleitung</NavLink>
                         <NavLink to="sprache">sprache</NavLink>
                         <NavLink to="berufsausbildung">
@@ -61,8 +63,7 @@ const SpracheUndBildung = () => {
                         </NavLink>
                         <NavLink to="recht-pflicht">rechte & Pflicht</NavLink>
                      </div>
-
-                     <div className="details">
+                     <div className="inhalt-details">
                         <Outlet />
                      </div>
                   </div>

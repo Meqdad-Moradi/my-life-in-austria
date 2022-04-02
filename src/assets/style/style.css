@@ -25,7 +25,7 @@ body {
   font-weight: 400;
   line-height: 1.7;
   overflow-x: hidden;
-  background-color: #f9f9fb;
+  background-color: hsl(240deg, 20%, 98%);
 }
 
 h1,
@@ -58,7 +58,7 @@ a {
 
 p {
   margin-top: 1em;
-  color: #55585e;
+  color: hsl(220deg, 5%, 35%);
 }
 
 p.details {
@@ -106,18 +106,18 @@ footer {
           user-select: none;
   outline: none;
   border: none;
-  background-color: #e52315;
-  color: white;
+  background-color: hsl(4deg, 83%, 49%);
+  color: hsl(0deg, 0%, 100%);
   border-radius: 0.3em;
   transition: all 0.4s ease-in-out;
 }
 .btn:hover {
-  background-color: #1d1e20;
-  box-shadow: 5px 5px 0.5em -0.2em #e52315;
+  background-color: hsl(220deg, 5%, 12%);
+  box-shadow: 5px 5px 0.5em -0.2em hsl(4deg, 83%, 49%);
   transform: translateY(-3px);
 }
 .btn:active {
-  background-color: #55585e;
+  background-color: hsl(220deg, 5%, 35%);
 }
 
 .title {
@@ -142,7 +142,7 @@ footer {
 
 .loading {
   font-size: 1.5rem;
-  color: #e52315;
+  color: hsl(4deg, 83%, 49%);
   text-align: center;
 }
 
@@ -154,7 +154,7 @@ footer {
 
 .header {
   height: 70px;
-  background-color: white;
+  background-color: hsl(0deg, 0%, 100%);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -183,12 +183,12 @@ footer {
   font-weight: 600;
   text-transform: uppercase;
   line-height: 1;
-  color: #e52315;
+  color: hsl(4deg, 83%, 49%);
   text-decoration: none;
 }
 .header .logo a small {
   display: block;
-  color: #55585e;
+  color: hsl(220deg, 5%, 35%);
   text-transform: initial;
   font-weight: 400;
 }
@@ -201,15 +201,15 @@ footer {
   gap: 2em;
 }
 .header .nav-list-item a {
-  color: #1d1e20;
+  color: hsl(220deg, 5%, 12%);
   transition: all 0.4s ease-in-out;
   text-decoration: none;
 }
 .header .nav-list-item a:hover {
-  color: #e52315;
+  color: hsl(4deg, 83%, 49%);
 }
 .header .nav-list-item a.active {
-  color: #e52315;
+  color: hsl(4deg, 83%, 49%);
 }
 
 @media (max-width: 820px) {
@@ -240,14 +240,14 @@ footer {
 }
 .showcase .showcase-banner .slogan .title {
   display: inline-block;
-  color: #e52315;
+  color: hsl(4deg, 83%, 49%);
   line-height: 1.3;
   margin-bottom: 0;
   font-size: clamp(2rem, 3.75vw, 4.375rem);
 }
 .showcase .showcase-banner .slogan h2 {
   margin-top: 0.5em;
-  color: #55585e;
+  color: hsl(220deg, 5%, 35%);
   font-size: 1.125rem;
 }
 .showcase .showcase-body {
@@ -266,29 +266,29 @@ footer {
   overflow: hidden;
   border-radius: 0.3em;
   padding: 2em;
-  box-shadow: 0 0 10px -4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px -4px hsla(0deg, 0%, 0%, 0.5);
   transition: all 0.4s ease-in-out;
 }
 .showcase .showcase-body a:hover {
   transform: translateY(-5px);
 }
 .showcase .showcase-body a:nth-of-type(1) {
-  background-color: #8091cb;
+  background-color: hsl(226deg, 62%, 70%);
 }
 .showcase .showcase-body a:nth-of-type(2) {
-  background-color: #74adc3;
+  background-color: hsl(197deg, 40%, 61%);
 }
 .showcase .showcase-body a:nth-of-type(3) {
-  background-color: #e6b000;
+  background-color: hsl(46deg, 100%, 45%);
 }
 .showcase .showcase-body a:nth-of-type(4) {
-  background-color: #7ba970;
+  background-color: hsl(108deg, 25%, 55%);
 }
 .showcase .showcase-body a:nth-of-type(5) {
-  background-color: #a8618d;
+  background-color: hsl(323deg, 29%, 52%);
 }
 .showcase .showcase-body a:nth-of-type(6) {
-  background-color: #8091cb;
+  background-color: hsl(207deg, 56%, 53%);
 }
 
 .showcase-nav {
@@ -306,20 +306,23 @@ footer {
   justify-content: center;
   align-items: center;
   font-size: 4.25rem;
-  color: white;
+  color: hsl(0deg, 0%, 100%);
 }
 .showcase-nav .title {
   font-size: clamp(1.5rem, 1vw, 2.5rem);
   line-height: 1.5;
-  color: white;
+  color: hsl(0deg, 0%, 100%);
 }
 .showcase-nav p {
-  color: #f9f9fb;
+  color: hsl(240deg, 20%, 98%);
   margin-top: 0;
   position: relative;
 }
 .showcase-nav p:nth-of-type(1) {
   margin-top: 1em;
+}
+.showcase-nav p:last-child {
+  color: hsl(220deg, 5%, 12%);
 }
 
 @media (max-width: 830px) {
@@ -345,8 +348,8 @@ footer {
   }
 }
 .notice .notice-content {
-  background-color: white;
-  box-shadow: 0 0 10px -4px rgba(0, 0, 0, 0.5);
+  background-color: hsl(0deg, 0%, 100%);
+  box-shadow: 0 0 10px -4px hsla(0deg, 0%, 0%, 0.5);
   border-radius: 0.3em;
   padding: 3em;
 }
@@ -356,11 +359,11 @@ footer {
 
 .footer {
   padding-top: 0;
-  color: white;
+  color: hsl(0deg, 0%, 100%);
 }
 .footer .container {
   padding-top: 3em;
-  border-top: 4px solid #e52315;
+  border-top: 4px solid hsl(4deg, 83%, 49%);
 }
 .footer .logo {
   display: flex;
@@ -374,12 +377,12 @@ footer {
   font-weight: 600;
   text-transform: uppercase;
   line-height: 1;
-  color: #e52315;
+  color: hsl(4deg, 83%, 49%);
   text-decoration: none;
 }
 .footer .logo a small {
   display: block;
-  color: #55585e;
+  color: hsl(220deg, 5%, 35%);
   text-transform: initial;
   font-weight: 400;
 }
@@ -400,7 +403,7 @@ footer {
 }
 .footer .footer-links a {
   display: inline-block;
-  color: #55585e;
+  color: hsl(220deg, 5%, 35%);
   transition: all 0.4s ease-in-out;
 }
 .footer .footer-links a:hover {
@@ -418,12 +421,12 @@ footer {
 .footer .social a {
   display: inline-block;
   line-height: 0;
-  color: #55585e;
+  color: hsl(220deg, 5%, 35%);
   font-size: 1.5rem;
   transition: all 0.4s ease-in-out;
 }
 .footer .social a:hover {
-  color: #74adc3;
+  color: hsl(197deg, 40%, 61%);
 }
 .footer .copyright {
   display: block;
@@ -442,7 +445,7 @@ footer {
   content: "";
   height: 100%;
   width: 100%;
-  background-color: #55585e;
+  background-color: hsl(220deg, 5%, 35%);
   mix-blend-mode: multiply;
   position: absolute;
   inset: 0;
@@ -462,7 +465,7 @@ footer {
 .sprache-bildung .banner .title {
   position: absolute;
   inset: 50% auto auto 1em;
-  color: white;
+  color: hsl(0deg, 0%, 100%);
   z-index: 3;
   max-width: 50%;
   transform: translateY(-50%);
@@ -476,10 +479,11 @@ footer {
   align-items: start;
   gap: 2em;
 }
-.sprache-bildung .text {
+.sprache-bildung .text .inhalt,
+.sprache-bildung .text .details {
   padding: 2em;
   border-radius: 0.3em;
-  background-color: white;
+  background-color: hsl(0deg, 0%, 100%);
 }
 .sprache-bildung .text .details:not(:nth-of-type(1)) {
   margin-top: 2em;
@@ -501,12 +505,16 @@ footer {
   align-items: start;
   margin-top: 2em;
 }
+.sprache-bildung .text .inhalt .inhalt-title:hover {
+  text-decoration: none;
+  cursor: auto;
+}
 .sprache-bildung .text .inhalt h1 {
   margin-bottom: 0.5em;
-  color: #8091cb;
+  color: hsl(226deg, 62%, 70%);
 }
 .sprache-bildung .text .inhalt a {
-  color: #8091cb;
+  color: hsl(226deg, 62%, 70%);
   font-size: 0.875rem;
   transition: all 0.4s ease-in-out;
 }
@@ -514,7 +522,10 @@ footer {
   text-decoration: underline;
 }
 .sprache-bildung .text .inhalt a.active {
-  color: #e52315;
+  color: hsl(4deg, 83%, 49%);
+}
+.sprache-bildung .text .inhalt-details {
+  margin-top: 2em;
 }
 .sprache-bildung .img-box {
   border-radius: 0.3em;
@@ -530,7 +541,7 @@ footer {
 .notfound h1 {
   font-size: 4rem;
   line-height: 1.7;
-  color: #e52315;
+  color: hsl(4deg, 83%, 49%);
 }
 .notfound h3 {
   font-weight: 500;
