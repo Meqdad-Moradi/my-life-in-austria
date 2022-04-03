@@ -1,13 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import {
-   FaLanguage,
+   FaAccusoft,
+   FaAnchor,
    FaBriefcase,
    FaFileMedical,
+   FaLanguage,
    FaPeopleCarry,
-   FaAnchor,
-   FaAccusoft,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import map from "./../assets/images/map.png";
 
 const Showcase = () => {
@@ -17,8 +17,8 @@ const Showcase = () => {
             <div className="showcase-banner">
                <div className="slogan">
                   <h1 className="title">Mein Leben in Österreich</h1>
-                  <h2>Chancen und Regeln</h2>
-                  <a href="#showcase-body" className="btn">
+                  <h2 className="subtitle">Chancen und Regeln</h2>
+                  <a href="#showcase-body" className="btn showcase-banner-btn">
                      Mehr erfahren
                   </a>
                </div>

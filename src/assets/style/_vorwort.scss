@@ -1,0 +1,41 @@
+.bundesminister {
+   padding-top: 0;
+
+   .content {
+      background-color: $white;
+      padding: 2em;
+      display: flow-root;
+      border-radius: $border-radius;
+      box-shadow: $boxshadow;
+
+      img {
+         float: left;
+         max-width: 40%;
+         margin: 0 2em 1em 0;
+      }
+
+      p {
+         text-align: justify;
+      }
+
+      .minister {
+         color: $black;
+         font-family: "Rubik", sans-serif;
+
+         &:last-child {
+            margin-top: 0;
+         }
+      }
+   }
+}
+
+.geselschaftsfuhrer {
+   @extend .bundesminister;
+   .content {
+      img {
+         float: right;
+         margin-right: 0;
+         margin-left: 2em;
+      }
+   }
+}

@@ -232,6 +232,10 @@ footer {
 }
 .showcase .showcase-banner .map-img {
   max-width: 100%;
+  transform: scale(1.1) translateY(-20px);
+  opacity: 0;
+  -webkit-animation: showcase 1s ease-in-out forwards;
+          animation: showcase 1s ease-in-out forwards;
 }
 .showcase .showcase-banner .slogan {
   display: flex;
@@ -246,11 +250,25 @@ footer {
   line-height: 1.3;
   margin-bottom: 0;
   font-size: clamp(2rem, 3.75vw, 4.375rem);
+  transform: translateY(20px);
+  opacity: 0;
+  -webkit-animation: showcase 1s ease-in-out forwards;
+          animation: showcase 1s ease-in-out forwards;
 }
-.showcase .showcase-banner .slogan h2 {
+.showcase .showcase-banner .slogan .subtitle {
   margin-top: 0.5em;
   color: hsl(220deg, 5%, 35%);
   font-size: 1.125rem;
+  transform: translateY(20px);
+  opacity: 0;
+  -webkit-animation: showcase 1s ease-in-out forwards 0.5s;
+          animation: showcase 1s ease-in-out forwards 0.5s;
+}
+.showcase .showcase-banner .slogan .showcase-banner-btn {
+  transform: translateY(20px);
+  opacity: 0;
+  -webkit-animation: showcase 1s ease-in-out forwards 0.8s;
+          animation: showcase 1s ease-in-out forwards 0.8s;
 }
 .showcase .showcase-body {
   display: grid;
@@ -293,6 +311,19 @@ footer {
   background-color: hsl(207deg, 56%, 53%);
 }
 
+@-webkit-keyframes showcase {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes showcase {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
 .showcase-nav {
   display: grid;
   gap: 2em;
@@ -357,6 +388,38 @@ footer {
 }
 .notice .title {
   text-align: center;
+}
+
+.bundesminister, .geselschaftsfuhrer {
+  padding-top: 0;
+}
+.bundesminister .content, .geselschaftsfuhrer .content {
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 2em;
+  display: flow-root;
+  border-radius: 0.3em;
+  box-shadow: 0 0 10px -4px hsla(0deg, 0%, 0%, 0.5);
+}
+.bundesminister .content img, .geselschaftsfuhrer .content img {
+  float: left;
+  max-width: 40%;
+  margin: 0 2em 1em 0;
+}
+.bundesminister .content p, .geselschaftsfuhrer .content p {
+  text-align: justify;
+}
+.bundesminister .content .minister, .geselschaftsfuhrer .content .minister {
+  color: hsl(220deg, 5%, 12%);
+  font-family: "Rubik", sans-serif;
+}
+.bundesminister .content .minister:last-child, .geselschaftsfuhrer .content .minister:last-child {
+  margin-top: 0;
+}
+
+.geselschaftsfuhrer .content img {
+  float: right;
+  margin-right: 0;
+  margin-left: 2em;
 }
 
 .footer {
@@ -491,11 +554,10 @@ footer {
   overflow: hidden;
 }
 .sprache-bildung .text .img-box img {
-  height: 70vh;
+  height: 80vh;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-left: 2em;
   border-radius: 0.3em;
 }
 .sprache-bildung .text .einleitung {
@@ -544,6 +606,11 @@ footer {
   border-radius: 0.3em;
 }
 
+@media (max-width: 768px) {
+  .sprache-bildung .einleitung {
+    order: initial !important;
+  }
+}
 .notfound {
   display: grid;
   place-items: center;

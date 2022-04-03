@@ -1,14 +1,7 @@
 import React from "react";
-import {
-   Outlet,
-   NavLink,
-   Link,
-   useLocation,
-   useNavigate,
-} from "react-router-dom";
+import { Outlet, NavLink, useLocation, useNavigate } from "react-router-dom";
 import Footer from "../global/Footer";
 import Header from "../global/Header";
-import SEinleitung from "./sEinleitung";
 
 const SpracheUndBildung = () => {
    const location = useLocation();
