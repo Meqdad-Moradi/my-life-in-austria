@@ -399,11 +399,22 @@ footer {
   display: flow-root;
   border-radius: 0.3em;
   box-shadow: 0 0 10px -4px hsla(0deg, 0%, 0%, 0.5);
+  clear: both;
 }
 .bundesminister .content img, .geselschaftsfuhrer .content img {
   float: left;
   max-width: 40%;
   margin: 0 2em 1em 0;
+  position: relative;
+}
+.bundesminister .content img::after, .geselschaftsfuhrer .content img::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: hsl(240deg, 20%, 98%);
+  position: absolute;
+  left: 10px;
+  top: 10px;
 }
 .bundesminister .content p, .geselschaftsfuhrer .content p {
   text-align: justify;

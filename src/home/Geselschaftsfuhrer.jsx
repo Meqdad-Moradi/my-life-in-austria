@@ -5,10 +5,12 @@ const Geselschaftsfuhrer = () => {
       <section className="geselschaftsfuhrer">
          <div className="container">
             <div className="content">
-               <img
-                  src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60"
-                  alt="bundisministerin"
-               />
+               <div className="img-box">
+                  <img
+                     src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60"
+                     alt="bundisministerin"
+                  />
+               </div>
                <h2>Sehr geehrte Damen und Herren!</h2>
                <p>
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.

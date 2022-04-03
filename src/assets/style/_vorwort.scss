@@ -7,11 +7,23 @@
       display: flow-root;
       border-radius: $border-radius;
       box-shadow: $boxshadow;
+      clear: both;
 
       img {
          float: left;
          max-width: 40%;
          margin: 0 2em 1em 0;
+         position: relative;
+
+         &::after {
+            content: "";
+            height: 100%;
+            width: 100%;
+            background-color: $light;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+         }
       }
 
       p {
